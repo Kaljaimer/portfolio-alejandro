@@ -37,6 +37,11 @@ a {
   color: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .skip-link {
   position: absolute;
   top: -48px;
@@ -161,6 +166,13 @@ h3 {
   margin-bottom: 10px;
 }
 
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: 26px;
+  align-items: center;
+}
+
 .hero-role {
   color: var(--accent-solid);
   margin-bottom: 14px;
@@ -190,12 +202,14 @@ h3 {
   color: var(--text);
   text-decoration: none;
   background: transparent;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .button:hover,
 .button:focus-visible {
   border-color: var(--accent-solid);
   color: var(--accent-solid);
+  transform: translateY(-1px);
 }
 
 .button-primary {
@@ -236,6 +250,16 @@ h3 {
   color: var(--text);
 }
 
+.hero-visual img,
+.project-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  filter: grayscale(12%);
+}
+
 .project-list {
   display: grid;
   gap: 14px;
@@ -252,6 +276,11 @@ h3 {
 .project-item:first-child {
   border-top: none;
   padding-top: 0;
+}
+
+.project-item.featured {
+  grid-template-columns: 54px minmax(0, 1fr) minmax(240px, 0.8fr);
+  align-items: start;
 }
 
 .project-index {
@@ -327,12 +356,25 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 :focus-visible {
   outline: 2px solid var(--accent-solid);
   outline-offset: 2px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
+  .hero,
+  .project-item.featured,
   .two-column,
   .skill-grid,
   .contact-panel {
@@ -358,5 +400,10 @@ h3 {
   .project-item,
   .hero-meta li {
     grid-template-columns: 1fr;
+  }
+
+  .hero-visual img,
+  .project-image img {
+    min-height: 220px;
   }
 }
