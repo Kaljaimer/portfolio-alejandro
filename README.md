@@ -7,18 +7,17 @@ Portfolio personal de Alejandro López Martínez.
 - CSS
 - GitHub Pages
 
-## Qué incluye
-- Hero más sólido y orientado a propuesta de valor
-- Secciones de valor, proyectos, experiencia y stack
-- Mejoras visuales y responsive
-- Mejoras de accesibilidad básica
-- Metadatos SEO/Open Graph/Twitter
+## Mejoras aplicadas
+- Propuesta de valor más clara en la cabecera
+- Mejor estructura narrativa del portfolio
+- Secciones de fortalezas, proyectos, experiencia y stack
+- Diseño visual más sólido y responsive
+- Mejoras básicas de accesibilidad
+- Metadatos SEO/Open Graph
+- Limpieza del remote `origin` para quitar credenciales embebidas
 
 ## Desarrollo local
-Al ser un sitio estático, basta con abrir `index.html` en navegador o servir la carpeta con cualquier servidor simple.
+Puedes abrir `index.html` directamente o servir la carpeta con un servidor estático simple.
 
 ## Despliegue
-La publicación puede hacerse desde la rama `main` con GitHub Pages.
-
-## Nota de seguridad
-El remote `origin` existía con credenciales embebidas en la URL. Conviene sustituirlo por una URL limpia antes de cualquier push.
+La publicación está pensada para GitHub Pages desde la rama `main`.
