@@ -3,61 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Alejandro López Martínez</title>
-    <meta name="description" content="Portfolio profesional de Alejandro López Martínez, desarrollador de software." />
-    <meta property="og:title" content="Portfolio | Alejandro López Martínez" />
-    <meta property="og:description" content="Proyectos, trayectoria y contacto de Alejandro López Martínez." />
+    <title>Alejandro López Martínez | Desarrollador Full Stack</title>
+    <meta
+      name="description"
+      content="Portfolio profesional de Alejandro López Martínez. Desarrollo web, automatización, backend, despliegues y productos mantenibles orientados a negocio."
+    />
+    <meta name="author" content="Alejandro López Martínez" />
+    <meta name="theme-color" content="#0b1020" />
+
+    <meta property="og:title" content="Alejandro López Martínez | Desarrollador Full Stack" />
+    <meta
+      property="og:description"
+      content="Proyectos, experiencia, stack y contacto de Alejandro López Martínez."
+    />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Alejandro López Martínez | Desarrollador Full Stack" />
+    <meta
+      name="twitter:description"
+      content="Portfolio profesional con proyectos, experiencia, stack técnico y contacto."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
     <header class="topbar">
       <div class="container topbar-inner">
         <a class="brand" href="#home">Alejandro López Martínez</a>
-        <nav>
+        <nav aria-label="Secciones principales">
           <a href="#about">Sobre mí</a>
+          <a href="#highlights">Valor</a>
           <a href="#projects">Proyectos</a>
-          <a href="#experience">Trayectoria</a>
+          <a href="#experience">Experiencia</a>
+          <a href="#skills">Stack</a>
           <a href="#contact">Contacto</a>
         </nav>
       </div>
     </header>
 
-    <main id="home">
-      <section class="hero container">
-        <div class="avatar avatar-fallback" aria-label="Iniciales de Alejandro López Martínez">AL</div>
-        <div class="hero-text">
-          <p class="eyebrow">Desarrollador de software</p>
-          <h1>Alejandro López Martínez</h1>
-          <p>
-            Desarrollo aplicaciones web mantenibles, automatizaciones útiles y herramientas que priorizan
-            claridad técnica, rendimiento y una buena experiencia de usuario.
+    <main id="main-content">
+      <section id="home" class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Desarrollador full stack · automatización · producto</p>
+          <h1>Construyo software útil, mantenible y preparado para operar en producción.</h1>
+          <p class="lead">
+            Ayudo a convertir procesos manuales y necesidades de negocio en aplicaciones web, paneles,
+            integraciones y automatizaciones con foco en claridad técnica, rendimiento y entrega estable.
           </p>
+
+          <div class="hero-badges" aria-label="Especialidades">
+            <span>Aplicaciones web</span>
+            <span>Automatización</span>
+            <span>Backends y APIs</span>
+            <span>CI/CD</span>
+          </div>
+
           <div class="hero-actions">
-            <a class="btn" href="https://www.linkedin.com/in/alejandro-l%C3%B3pez-mart%C3%ADnez-712486177/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="btn btn-secondary" href="https://github.com/Kaljaimer" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="#projects">Ver proyectos</a>
+            <a class="btn btn-secondary" href="mailto:kaljaimer11@hotmail.com">Contactar</a>
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/Kaljaimer"
+              target="_blank"
+              rel="noreferrer"
+            >GitHub</a>
           </div>
         </div>
+
+        <aside class="hero-panel" aria-label="Resumen profesional">
+          <div class="avatar avatar-fallback" aria-label="Iniciales de Alejandro López Martínez">AL</div>
+          <ul class="summary-list">
+            <li><strong>Perfil:</strong> Full stack orientado a producto</li>
+            <li><strong>Foco:</strong> fiabilidad, simplicidad y automatización</li>
+            <li><strong>Entornos:</strong> frontend, backend, despliegues y operación</li>
+            <li><strong>Ubicación:</strong> España</li>
+          </ul>
+        </aside>
       </section>
 
       <section id="about" class="container section">
-        <h2>Sobre mí</h2>
-        <p>
-          Soy un desarrollador centrado en resolver problemas reales con soluciones simples y robustas.
-          Me muevo bien entre frontend, backend y automatización, con preferencia por arquitecturas limpias,
-          despliegues reproducibles y productos que puedan mantenerse bien con el tiempo.
+        <div class="section-heading">
+          <p class="kicker">Sobre mí</p>
+          <h2>Desarrollo con mentalidad de largo plazo</h2>
+        </div>
+        <p class="section-text">
+          Me gusta construir soluciones que no solo funcionen hoy, sino que sigan siendo comprensibles,
+          desplegables y fáciles de mantener dentro de seis meses. Trabajo cómodo entre frontend, backend,
+          automatización y mejora operativa, priorizando impacto real sobre complejidad innecesaria.
         </p>
       </section>
 
+      <section id="highlights" class="container section">
+        <div class="section-heading">
+          <p class="kicker">Qué aporto</p>
+          <h2>Valor práctico para equipos y producto</h2>
+        </div>
+        <div class="highlights-grid">
+          <article class="info-card">
+            <h3>Entrega fiable</h3>
+            <p>Diseño flujos y arquitectura con foco en estabilidad, despliegues repetibles y menos fricción operativa.</p>
+          </article>
+          <article class="info-card">
+            <h3>Automatización útil</h3>
+            <p>Reduciendo trabajo manual, errores repetitivos y tareas invisibles que consumen tiempo del equipo.</p>
+          </article>
+          <article class="info-card">
+            <h3>Visión end-to-end</h3>
+            <p>Desde interfaz y experiencia de usuario hasta APIs, datos, observabilidad y operación en producción.</p>
+          </article>
+        </div>
+      </section>
+
       <section id="projects" class="container section">
-        <h2>Proyectos destacados</h2>
+        <div class="section-heading">
+          <p class="kicker">Proyectos</p>
+          <h2>Trabajo orientado a negocio y operación</h2>
+        </div>
         <div class="grid">
-          <article class="card">
+          <article class="card project-card featured-card">
+            <div class="project-topline">Proyecto destacado</div>
             <h3>Plataforma de gestión interna</h3>
             <p>
-              Aplicación web para centralizar operaciones, métricas y seguimiento de tareas,
-              reduciendo trabajo manual mediante automatización y paneles de control.
+              Aplicación web para centralizar operaciones, métricas y seguimiento de tareas. El objetivo fue reducir
+              trabajo manual, concentrar visibilidad operativa y facilitar decisiones sobre datos actualizados.
             </p>
+            <ul class="project-points">
+              <li>Unificación de flujos y paneles en una sola interfaz.</li>
+              <li>Automatización de tareas repetitivas y reducción de contexto disperso.</li>
+              <li>Mejor trazabilidad para equipo y operaciones.</li>
+            </ul>
             <div class="stack">
               <span class="tag">React</span>
               <span class="tag">Node.js</span>
@@ -66,25 +150,25 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card project-card">
             <h3>Reporting en tiempo real</h3>
             <p>
-              Sistema orientado a visualizar KPIs y eventos operativos en tiempo real,
-              con backend de agregación de datos y alertas para incidencias relevantes.
+              Sistema para visualizar KPIs y eventos operativos en tiempo real, con agregación de datos y alertas sobre
+              incidencias relevantes para negocio y soporte.
             </p>
             <div class="stack">
               <span class="tag">TypeScript</span>
               <span class="tag">Express</span>
               <span class="tag">Redis</span>
-              <span class="tag">Charts</span>
+              <span class="tag">Dashboards</span>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card project-card">
             <h3>Automatización de despliegues</h3>
             <p>
-              Flujos CI/CD para despliegues reproducibles y rollback rápido, mejorando la estabilidad
-              de entrega y reduciendo fricción operativa.
+              Flujos CI/CD para acelerar entrega, reducir errores manuales y facilitar rollback rápido cuando la
+              situación operativa lo requiere.
             </p>
             <div class="stack">
               <span class="tag">GitHub Actions</span>
@@ -94,11 +178,11 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card project-card">
             <h3>Portal de cliente</h3>
             <p>
-              Interfaz web responsive con autenticación, área privada y gestión de incidencias,
-              orientada a mejorar la experiencia de usuario y el soporte.
+              Interfaz responsive con área privada, autenticación y gestión de incidencias, orientada a mejorar la
+              experiencia del usuario final y el flujo de soporte.
             </p>
             <div class="stack">
               <span class="tag">React</span>
@@ -111,14 +195,17 @@
       </section>
 
       <section id="experience" class="container section">
-        <h2>Trayectoria</h2>
+        <div class="section-heading">
+          <p class="kicker">Experiencia</p>
+          <h2>Perfil técnico con foco en ejecución</h2>
+        </div>
         <div class="timeline">
           <article class="item">
             <h3>Desarrollador Full Stack · Etapa reciente</h3>
             <div class="meta">Actualidad</div>
             <p>
-              Desarrollo y mantenimiento de aplicaciones web, integración de servicios,
-              mejora de rendimiento y definición de flujos de despliegue.
+              Desarrollo y mantenimiento de aplicaciones web, integración de servicios, mejora de rendimiento y
+              definición de flujos de despliegue para productos y herramientas internas.
             </p>
           </article>
 
@@ -126,26 +213,66 @@
             <h3>Desarrollador Web · Etapa previa</h3>
             <div class="meta">Experiencia anterior</div>
             <p>
-              Implementación de funcionalidades, integración con APIs y mejora de procesos internos
-              mediante automatización y herramientas de soporte.
+              Implementación de nuevas funcionalidades, integración con APIs, automatización de procesos y mejora de
+              herramientas de soporte para operación diaria.
             </p>
           </article>
         </div>
       </section>
 
-      <section id="contact" class="container section">
-        <h2>Contacto</h2>
+      <section id="skills" class="container section">
+        <div class="section-heading">
+          <p class="kicker">Stack</p>
+          <h2>Tecnologías y áreas en las que trabajo</h2>
+        </div>
+        <div class="skills-layout">
+          <article class="skill-box">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, TypeScript, React, diseño responsive y enfoque en claridad visual.</p>
+          </article>
+          <article class="skill-box">
+            <h3>Backend</h3>
+            <p>APIs, Node.js, Express, integración de servicios, automatización y soporte a procesos de negocio.</p>
+          </article>
+          <article class="skill-box">
+            <h3>Infraestructura</h3>
+            <p>Linux, Docker, CI/CD, despliegues reproducibles, observabilidad y operación práctica.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container section contact-section">
+        <div>
+          <div class="section-heading left">
+            <p class="kicker">Contacto</p>
+            <h2>Si quieres construir algo sólido, hablemos</h2>
+          </div>
+          <p class="section-text compact">
+            Estoy abierto a oportunidades donde el software tenga impacto real y donde se valore tanto la ejecución
+            como el criterio técnico.
+          </p>
+        </div>
+
         <ul class="contact-list">
-          <li><strong>Email:</strong> <a href="mailto:kaljaimer11@hotmail.com">kaljaimer11@hotmail.com</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alejandro-l%C3%B3pez-mart%C3%ADnez-712486177/" target="_blank" rel="noreferrer">linkedin.com/in/alejandro-lópez-martínez-712486177</a></li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/Kaljaimer" target="_blank" rel="noreferrer">github.com/Kaljaimer</a></li>
+          <li><strong>Email</strong><a href="mailto:kaljaimer11@hotmail.com">kaljaimer11@hotmail.com</a></li>
+          <li>
+            <strong>LinkedIn</strong>
+            <a href="https://www.linkedin.com/in/alejandro-l%C3%B3pez-mart%C3%ADnez-712486177/" target="_blank" rel="noreferrer">
+              linkedin.com/in/alejandro-lópez-martínez-712486177
+            </a>
+          </li>
+          <li>
+            <strong>GitHub</strong>
+            <a href="https://github.com/Kaljaimer" target="_blank" rel="noreferrer">github.com/Kaljaimer</a>
+          </li>
         </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <small>© 2026 Alejandro López Martínez. Portfolio profesional.</small>
+      <div class="container footer-inner">
+        <small>© 2026 Alejandro López Martínez</small>
+        <a href="#home">Volver arriba ↑</a>
       </div>
     </footer>
   </body>
