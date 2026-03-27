@@ -50,8 +50,18 @@
           <div class="hero-copy-block">
             <div class="section-label">[ INTRO ]</div>
             <p class="intro-line">Hi, I’m</p>
-            <h1>Alejandro López Martínez</h1>
-            <p class="hero-role">Full stack developer / automation / product-minded engineering</p>
+            <div class="name-row">
+              <div class="profile-slot">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+                  alt="Profile placeholder portrait"
+                />
+              </div>
+              <div class="name-copy">
+                <h1>Alejandro López Martínez</h1>
+                <p class="hero-role">Full stack developer / automation / product-minded engineering</p>
+              </div>
+            </div>
             <p class="hero-text">
               I build web applications, integrations and internal tools with a strong focus on technical clarity,
               long-term maintainability and practical value for product, business and operations.
@@ -90,7 +100,7 @@
           <div class="section-label">[ SELECTED WORK ]</div>
           <h2>Projects shaped around operations, product thinking and efficiency.</h2>
           <div class="project-list">
-            <article class="project-item featured">
+            <article class="project-item featured card-reveal reveal-card">
               <div class="project-index">01</div>
               <div class="project-content">
                 <h3>Internal operations platform</h3>
@@ -115,7 +125,7 @@
               </div>
             </article>
 
-            <article class="project-item reveal">
+            <article class="project-item card-reveal reveal-card">
               <div class="project-index">02</div>
               <div class="project-content">
                 <h3>Real-time reporting and monitoring</h3>
@@ -128,7 +138,7 @@
               </div>
             </article>
 
-            <article class="project-item reveal">
+            <article class="project-item card-reveal reveal-card">
               <div class="project-index">03</div>
               <div class="project-content">
                 <h3>Deployment automation</h3>
@@ -141,7 +151,7 @@
               </div>
             </article>
 
-            <article class="project-item reveal">
+            <article class="project-item card-reveal reveal-card">
               <div class="project-index">04</div>
               <div class="project-content">
                 <h3>Customer portal</h3>
@@ -162,14 +172,14 @@
             <h2>Technical profile shaped by execution, ownership and continuous improvement.</h2>
           </div>
           <div class="timeline">
-            <article>
+            <article class="card-reveal reveal-card">
               <h3>Full stack development</h3>
               <p>
                 Contributed to the evolution of web products, technical integrations, performance improvements and internal tooling
                 aligned with both product goals and operational needs.
               </p>
             </article>
-            <article>
+            <article class="card-reveal reveal-card">
               <h3>Automation and process improvement</h3>
               <p>
                 Built workflows and technical utilities to reduce manual work, improve delivery quality and create more reliable internal processes.
@@ -182,15 +192,15 @@
           <div class="section-label">[ STACK ]</div>
           <h2>Technologies and areas I work with regularly.</h2>
           <div class="skill-grid">
-            <div class="skill-card">
+            <div class="skill-card card-reveal reveal-card">
               <h3>Frontend</h3>
               <p>HTML, CSS, JavaScript, TypeScript, React, responsive interfaces and product-focused UI structure.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card card-reveal reveal-card">
               <h3>Backend</h3>
               <p>Node.js, Express, REST APIs, integrations, business logic and automation-focused development.</p>
             </div>
-            <div class="skill-card">
+            <div class="skill-card card-reveal reveal-card">
               <h3>Delivery</h3>
               <p>Linux, Docker, CI/CD, reproducible deployments and support for real operating environments.</p>
             </div>
@@ -227,7 +237,7 @@
         { threshold: 0.14 }
       );
 
-      document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+      document.querySelectorAll('.reveal, .reveal-card').forEach((element) => observer.observe(element));
     </script>
   </body>
 </html>
